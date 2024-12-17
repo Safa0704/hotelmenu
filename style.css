@@ -1,0 +1,63 @@
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('assets/3.jpg'); /* Replace 'background.jpg' with your image file path */
+        background-size: cover; /* Ensures the image covers the entire page */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents image tiling */
+        font-family: Arial, sans-serif; /* Sets a clean font */
+        color: #333; /* Default text color */
+    }
+
+.form-container {
+    width: 50%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.logo {
+    width: 200px; /* Increase the width */
+    height: 10px auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto 10px;
+}
+h1 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center; /* Keep the title centered */
+    padding-bottom: 20px; /* Adjust this value as needed */
+    margin-top: 0; 
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background-color: #22416d;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #22416d;
+}

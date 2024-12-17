@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Menu Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <!-- Logo and Title -->
+        <div class="header">
+            <img src="assets/2.jpg" alt="Food Logo" class="logo">
+            <h1>Hotel Food Menu Form</h1>
+        </div>
+        
+        <!-- Form -->
+        <form action="/submit_menu" method="post">
+            <!-- ID (Auto) -->
+            <input type="hidden" name="id" value="auto_generated_id">
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id" placeholder="Enter ID" required>
+
+            <!-- Cuisine Category -->
+            <label for="category">Cuisine</label>
+            <select id="category" name="category" onchange="populateFoods()" required>
+                <option value="">Select Cuisine</option>
+                <option value="Continental">Continental</option>
+                <option value="Indian">Indian</option>
+                <option value="Italian">Italian</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Mexican">Mexican</option>
+            </select>
+
+            <!-- Food Name -->
+            <label for="foodName">Food Name</label>
+            <select id="foodName" name="food_name" onchange="displayFoodDetails()" required>
+                <option value="">Select Food</option>
+            </select>
+
+            <!-- Price -->
+            <label for="price">Price</label>
+            <input type="number" id="price" name="price" placeholder="Price" readonly>
+
+            <!-- Description -->
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="4" placeholder="Description" readonly></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
